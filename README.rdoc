@@ -1,2 +1,5 @@
 Vanilla starter for
-Rails 4.2 + Webpacker + React-Bootstrap
+Rails 4.2 + Webpacker + React-Bootstrap + Redux + Redux-Thunk + Karma + Jasmine
+
+* To run test : `npm run test`
+* Start server : `rails s` , log onto `localhost:3000`
