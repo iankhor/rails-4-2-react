@@ -107,7 +107,33 @@ module.exports = function(config) {
 ```
 11. Run `npm run test`
 
+### Add enzyme + Karma + Webpack configuration
+1. Run `npm i webpack-merge` to merge config files
+2. In `config/webpack/test.js`, add the following code to setup enzyme
+```
+...
+const merge = require('webpack-merge')
+....
+const karmaEnzymeConfig = {
+      devtool: 'inline-source-map', // just do inline source maps instead of the default
+      module: {
+        loaders: [{
+          test: /\.js$/,
+          exclude: /\/node_modules\//,
+          loader: 'babel',
+          query: {
+            presets: ['airbnb'],
+          },
+        }],
+      }
+};
+...
+
+module.exports = merge(environment.toWebpackConfig(), karmaEnzymeConfig)
+```
 
 ## Resources
 
 https://github.com/rails/webpacker/blob/master/docs/testing.md
+http://airbnb.io/enzyme/docs/guides/karma.html
+https://github.com/rails/webpacker/blob/master/docs/webpack.md
