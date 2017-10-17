@@ -1,19 +1,25 @@
 {
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iankhor/rails-4-2-react.git"
+  },
+  "license": "MIT",
   "scripts": {
     "test": "NODE_ENV=test karma start"
   },
   "dependencies": {
     "@rails/webpacker": "^3.0.1",
     "babel-preset-react": "^6.24.1",
-    "prop-types": "^15.5.10",
+    "coffeescript": "^2.0.1",
+    "prop-types": "^15.6.0",
     "react": "^15.6.1",
-    "react-bootstrap": "^0.31.2",
+    "react-bootstrap": "^0.31.3",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
-    "typescript": "^2.5.2",
-    "ts-loader": "^2.3.7"
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.2"
   },
   "devDependencies": {
     "istanbul-instrumenter-loader": "^3.0.0",
@@ -27,7 +33,7 @@
     "karma-jquery": "^0.2.2",
     "karma-spec-reporter": "0.0.31",
     "karma-webpack": "^2.0.4",
-    "webpack-dev-server": "^2.7.1",
+    "webpack-dev-server": "^2.9.2",
     "webpack-merge": "^4.1.0"
   }
 }
