@@ -11,6 +11,10 @@ import React from 'react';
 import { render } from 'react-dom';
 import Root from '../containers/Root';
 
+import 'bootstrap/dist/css/bootstrap'
+import 'bootstrap/dist/css/bootstrap-theme'
+import 'bootstrap/dist/js/bootstrap'
+
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.body.appendChild(document.createElement('div'));
   render(<Root/>, container);
