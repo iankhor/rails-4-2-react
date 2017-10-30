@@ -11,9 +11,15 @@ import React from 'react';
 import { render } from 'react-dom';
 import Root from '../containers/Root';
 
+import 'bootstrap/dist/js/bootstrap'
+
+// these doesnt feel like it belongs here
 import 'bootstrap/dist/css/bootstrap'
 import 'bootstrap/dist/css/bootstrap-theme'
-import 'bootstrap/dist/js/bootstrap'
+import './../styles/bootstrap_override'
+import './../styles/additional'
+import './../styles/oculo_v2'
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.body.appendChild(document.createElement('div'));

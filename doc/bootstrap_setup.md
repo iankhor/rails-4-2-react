@@ -1,6 +1,6 @@
 ## Bootstrap Setup
 
-1. npm i --save bootstrap
+1. npm i --save bootstrap css-loader style-loader url-loader
 2. Go to `app/javascript/packs/application.js`
 3. add the following lines (is this the right way ??)
 ```
